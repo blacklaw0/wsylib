@@ -1,0 +1,66 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+            </TabWidget>
+
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_weight="0.08"
+        android:background="#000" >
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="#eee"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            style="@style/bottom_menu_style"
+            android:checked="true"
+            android:text="@string/main_books"
+            android:textColor="#000" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            style="@style/bottom_menu_style"
+            android:text="@string/main_mylib"
+            android:textColor="#000" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            style="@style/bottom_menu_style"
+            android:text="@string/main_school"
+            android:textColor="#000" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            style="@style/bottom_menu_style"
+            android:text="@string/main_about"
+            android:textColor="#000" />
+
+    </RadioGroup>
+
+        </LinearLayout>
+
+</TabHost>

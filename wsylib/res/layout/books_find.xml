@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    android:fitsSystemWindows="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:id="@+id/leftMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#eee"
+            android:scrollbars="none"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:focusable="false"
+                android:orientation="vertical"
+                android:scrollbars="none" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/metro_title"
+                    android:text="@string/setting_title_term"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000" />
+
+                <RadioGroup
+                    android:id="@+id/group_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/type_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/metro_radio_selector"
+                        android:checked="true"
+                        android:contentDescription="0"
+                        android:text="@string/setting_term_any" />
+
+                    <RadioButton
+                        android:id="@+id/type_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/metro_radio_selector"
+                        android:contentDescription="1"
+                        android:text="@string/setting_term_title" />
+
+                    <RadioButton
+                        android:id="@+id/type_author"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/metro_radio_selector"
+                        android:contentDescription="2"
+                        android:text="@string/setting_term_author" />
+
+                    <RadioButton
+                        android:id="@+id/type_classno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/metro_radio_selector"
+                        android:contentDescription="3"
+                        android:text="@string/setting_term_classno" />
+
+                    <RadioButton
+                        android:id="@+id/type_isbn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/metro_radio_selector"
+                        android:contentDescription="4"
+                        android:text="@string/setting_term_isbn" />
+
+                    <RadioButton
+                        android:id="@+id/type_callno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/metro_radio_selector"
+                        android:contentDescription="5"
+                        android:text="@string/setting_term_callno" />
+
+                    <RadioButton
+                        android:id="@+id/type_publisher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/metro_radio_selector"
+                        android:contentDescription="6"
+                        android:text="@string/setting_term_publisher" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/metro_title"
+                    android:text="@string/setting_title_pagenum"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000" />
+
+                <RadioGroup
+                    android:id="@+id/group_pageNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/num_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/metro_radio_selector"
+                        android:checked="true"
+                        android:contentDescription="0"
+                        android:text="@string/setting_pagenum_1" />
+
+                    <RadioButton
+                        android:id="@+id/num_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/metro_radio_selector"
+                        android:contentDescription="1"
+                        android:text="@string/setting_pagenum_2" />
+
+                    <RadioButton
+                        android:id="@+id/num_100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/metro_radio_selector"
+                        android:contentDescription="2"
+                        android:text="@string/setting_pagenum_3" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/metro_title"
+                    android:text="@string/setting_title_sort"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000" />
+
+                <RadioGroup
+                    android:id="@+id/group_sortType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/s_type_null"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/metro_radio_selector"
+                        android:checked="true"
+                        android:contentDescription="0"
+                        android:text="@string/setting_sort_match" />
+
+                    <RadioButton
+                        android:id="@+id/s_type_date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/metro_radio_selector"
+                        android:contentDescription="1"
+                        android:text="@string/setting_sort_date" />
+
+                    <RadioButton
+                        android:id="@+id/s_type_publisher"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/metro_radio_selector"
+                        android:contentDescription="2"
+                        android:text="@string/setting_term_publisher" />
+
+                </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/metro_title"
+                            android:text="@string/setting_title_sortway"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000" />
+
+                    <RadioGroup
+                        android:id="@+id/group_sort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/sort_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/metro_radio_selector"
+                android:checked="true"
+                android:contentDescription="0"
+                android:text="@string/setting_sortway_asc" />
+
+            <RadioButton
+                android:id="@+id/sort_asc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:button="@drawable/metro_radio_selector"
+                android:contentDescription="1"
+                android:text="@string/setting_sortway_sec" />
+
+        </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eee"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+
+
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/setting_but" />
+
+
+
+
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/book_but_focus"
+                    android:ems="10"
+                    android:singleLine="true" >
+
+                </EditText>
+
+
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/find_but" />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/background_find"
+                android:orientation="vertical" >
+
+
+                <ExpandableListView
+                    android:groupIndicator="@null"                                                                                                          
+                    android:listSelector="#00000000"
+                    android:id="@+id/listView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#bb000000"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:fastScrollEnabled="true"
+                    android:focusable="true" >
+
+                </ExpandableListView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

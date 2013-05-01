@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+.full{
+	background:#396;	
+}
+</style>
+</head>
+
+<body>
+<table border="1px" cellspacing="0px" bordercolor="#FF6666">
+
+<tr><th >星期</th><th>部门</th><th>6:00-7:50</th><th>7:50-11:30</th><th>11:30-14:00</th><th>14:00-17:30</th><th>17:30-21:30</th></tr>
+<tr><td rowspan="6">一~日</td><td>自习室</td><td colspan="5" class="full"></td></tr>
+<tr><td>馆办公室</td><td></td><td colspan="4" class="full"></td></tr>
+
+<tr><td>电子阅览室</td><td></td><td colspan="4" class="full"></td></tr>
+
+<tr><td>图书阅览区</td><td></td><td class="full"></td><td></td><td class="full" colspan="2"></td></tr>
+
+<tr><td>报刊阅览室</td><td></td><td class="full"></td><td></td><td class="full" colspan="2"></td></tr>
+
+<tr><td>图书借阅区</td><td></td><td class="full"></td><td></td><td class="full"></td><td></td></tr>
+
+<tr><td rowspan="2">一~五</td><td>文献采编部</td><td></td><td class="full"></td><td></td><td class="full"></td><td></td></tr>
+
+<tr><td>数字化部</td><td></td><td class="full"></td><td></td><td class="full"></td><td></td></tr>
+<tr><td colspan="7">绿色方格代表开放,否则不开放<br />周五下午理论学习，除电子阅览室，其他部门均不对外服务</td></tr>
+
+
+
+
+
+
+</table>
+</body>
+</html>

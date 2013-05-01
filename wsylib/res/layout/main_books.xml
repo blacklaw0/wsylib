@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+
+
+
+
+
+
+
+
+            <RadioGroup
+                android:id="@+id/cho_books_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#eee"
+                android:orientation="horizontal"
+                android:showDividers="none" >
+
+                <RadioButton
+                    android:id="@+id/choFavorite"
+                    style="@style/books_menu_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/books_menu_selector"
+                    android:checked="true"
+                    android:text="@string/books_favorite"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/choHot"
+                    style="@style/books_menu_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/books_menu_selector"
+                    android:checked="false"
+                    android:text="@string/books_hot"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/choTools"
+                    style="@style/books_menu_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/books_menu_selector"
+                    android:text="@string/books_tools"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/choFind"
+                    style="@style/books_menu_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/books_menu_selector"
+                    android:text="@string/books_search"
+                    android:textSize="18dp"
+                    android:visibility="visible" />
+
+                <RadioButton
+                    android:id="@+id/choFind_R"
+                    style="@style/books_menu_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+            </RadioGroup>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:fadingEdge="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00ffffff"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp" >
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

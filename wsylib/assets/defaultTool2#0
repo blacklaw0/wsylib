@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<table border="2px" cellspacing="0px" bordercolor="#FF6666">
+<tr><th>楼层</th><th>部门名称</th><th>地点</th><th>相关服务</th></tr>
+<tr><td>一楼</td><td>自习室</td><td>101,102,108,109</td><td>自主学习</td></tr>
+<tr><td rowspan="2">二楼</td><td>图书借阅室</td><td>205</td><td>纸质图书(开架,外借)</td></tr>
+<tr><td>馆办公室</td><td>204</td><td>借阅证办理、挂失、文印服务</td></tr>
+
+<tr><td rowspan="2">三楼</td><td>工具书阅览室</td><td>301</td><td>工具书、西文书（仅供阅览）</td></tr>
+<tr><td>报刊阅览室</td><td>307、308</td><td>纸质报纸、现刊、过刊（仅供阅览）</td></tr>
+
+<tr><td rowspan="3">四楼</td><td>图书阅览室</td>
+<td>401</td><td>纸质图书（仅供阅览）</td></tr>
+<tr>
+  <td>电子资源免费阅览室</td><td>407（1-62号）</td><td>馆藏资源检索、馆藏光盘</td></tr>
+<tr>
+  <td>多媒体阅览室</td><td>407、408</td><td>Internet浏览、馆藏资源检索</td></tr>
+<tr><td >五楼</td><td>采编部</td><td>508</td><td>图书采购加工、新书通报</td></tr>
+
+
+
+
+
+
+</table>
+</body>
+</html>

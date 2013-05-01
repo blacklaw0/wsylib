@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >   
+<!-- 连框颜色值 -->
+<item android:top="35dp">   
+
+      <shape>   
+          <size android:height="4dp"/>
+            <solid android:color="@color/school" />   
+      </shape>   
+</item>
+
+
+</layer-list>

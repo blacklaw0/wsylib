@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/mylibGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#eee"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioLogin"
+                    style="@style/mylib_menu_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/mylib_menu_selector"
+                    android:checked="true"
+                    android:contentDescription="0"
+                    android:text="@string/mylib_login" />
+
+                <RadioButton
+                    android:id="@+id/radioRenew"
+                    style="@style/mylib_menu_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/mylib_menu_selector"
+                    android:contentDescription="1"
+                    android:text="@string/mylib_renew" />
+
+                <RadioButton
+                    android:id="@+id/radioHistory"
+                    style="@style/mylib_menu_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/mylib_menu_selector"
+                    android:contentDescription="2"
+                    android:text="@string/mylib_history" />
+
+                <RadioButton
+                    android:id="@+id/radioCount"
+                    style="@style/mylib_menu_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/mylib_menu_selector"
+                    android:contentDescription="3"
+                    android:text="@string/mylib_financial" />
+
+            </RadioGroup>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>
